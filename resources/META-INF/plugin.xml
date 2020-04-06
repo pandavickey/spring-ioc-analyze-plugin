@@ -3,12 +3,23 @@
     <name>spring-ioc-analyze</name>
     <version>1.0</version>
     <vendor email="wankun.pwk@alibaba.inc" url="http://www.ele.me">eleme</vendor>
-    <description><![CDATA[this is a plugin for spring ioc analyze, find the wrong inject!]]></description>
+    <description>
+        <![CDATA[
+        <br/>
+        Github地址: https://github.com/pandavickey/spring-ioc-analyze-plugin .<br/><br/>
+        A Intellij IDEA plugin for spring IOC dependency analyze.<br/>
+        提供给 Spring 项目排查 Java 循环依赖问题的 Intellij 插件。<br/><br/>
+        使用方式：<br/>
+        1、 在 Intellij 需要分析的工程、项目或者文件目录中右击弹出菜单栏选择【SpringIOCAnalyze】;<br/>
+        2、 等待分析结果。
+        ]]>
+    </description>
     <change-notes><![CDATA[this is first commit, can support find the error]]></change-notes>
     <idea-version since-build="173.0"/>
 
     <actions>
-        <action id="com.panda.spring.ioc.analyze.plugin.SpringIOCAnalyzeAction" class="com.panda.spring.ioc.analyze.plugin.SpringIOCAnalyzeAction" text="SpringIOCAnalyze"
+        <action id="com.panda.spring.ioc.analyze.plugin.SpringIOCAnalyzeAction"
+                class="com.panda.spring.ioc.analyze.plugin.SpringIOCAnalyzeAction" text="SpringIOCAnalyze"
                 description="SpringIOCAnalyze">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="UML.Group"/>
         </action>
